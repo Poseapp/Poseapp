@@ -1,0 +1,37 @@
+name: poseapp
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  smooth_page_indicator: ^1.0.0+2   
+  google_fonts: ^3.0.1 
+  simple_ripple_animation: ^0.0.3
+  pin_input_text_field: 
+  get: ^4.6.1
+  flutter_svg: ^0.22.0
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Raleway
+      fonts: 
+        - asset: assets/fonts/ralewaysemibold600.ttf
+          weight: 600
+        - asset: assets/fonts/ralewayralewayromanmedium500.ttf
+          weight: 500
+        - asset: assets/fonts/ralewayralewayromanbold700.ttf
+          weight: 700
+        - asset: assets/fonts/ralewaybold700.ttf
+          weight: 700
+        - asset: assets/fonts/ralewayralewayromanregular400.ttf
+          weight: 400
+        - asset: assets/fonts/ralewaymedium500.ttf
+          weight: 500
