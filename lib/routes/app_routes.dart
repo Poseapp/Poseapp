@@ -1,11 +1,13 @@
+import 'package:poseapp/presentation/allow_permission_screen/allow_permission_screen.dart';
+import 'package:poseapp/presentation/globalleaderboard_screen/globalleaderboard_screen.dart';
 import 'package:poseapp/presentation/individual_detail_w_comments_screen/individual_detail_w_comments_screen.dart';
 import 'package:poseapp/presentation/home_friends_feed_screen/home_friends_feed_screen.dart';
 import 'package:poseapp/presentation/badge_earned_screen/badge_earned_screen.dart';
-import 'package:poseapp/presentation/home_not_posted_yet_screen/home_not_posted_yet_screen.dart';
-import 'package:poseapp/presentation/home_nothing_to_show_screen/home_nothing_to_show_screen.dart';
+import 'package:poseapp/presentation/invite_friends_contacts_imported_history_screen/invite_friends_contacts_imported_history_screen.dart';
+import 'package:poseapp/presentation/notificationsSetting_screen/notificationssetting_screen.dart';
+import 'package:poseapp/presentation/notifications_screen/notifications1_screen.dart';
 import 'package:poseapp/presentation/otp_verification_screen/otp_verification_screen.dart';
 import 'package:poseapp/presentation/invite_code_screen/invite_code_screen.dart';
-import 'package:poseapp/presentation/forgot_password_verification_screen/forgot_password_verification_screen.dart';
 import 'package:poseapp/presentation/add_your_friends_screen/add_your_friends_screen.dart';
 import 'package:poseapp/presentation/add_your_friends_contacts_linked_screen/add_your_friends_contacts_linked_screen.dart';
 import 'package:poseapp/presentation/welcome_screen/welcome_screen.dart';
@@ -16,7 +18,6 @@ import 'package:poseapp/presentation/account_setup_finishing_account_screen/acco
 import 'package:poseapp/presentation/leaderboard_screen/leaderboard_screen.dart';
 import 'package:poseapp/presentation/profile_screen/profile_screen.dart';
 import 'package:poseapp/presentation/settings_screen/settings_screen.dart';
-import 'package:poseapp/presentation/notifications_screen/notifications_screen.dart';
 import 'package:poseapp/presentation/account_details_screen/account_details_screen.dart';
 import 'package:poseapp/presentation/today_s_pose_screen/today_s_pose_screen.dart';
 import 'package:poseapp/presentation/camera_screen/camera_screen.dart';
@@ -24,13 +25,8 @@ import 'package:poseapp/presentation/camera_countdown_screen/camera_countdown_sc
 import 'package:poseapp/presentation/camera_picture_taken_screen/camera_picture_taken_screen.dart';
 import 'package:poseapp/presentation/invite_friends_screen/invite_friends_screen.dart';
 import 'package:poseapp/presentation/invite_friends_contacts_imported_screen/invite_friends_contacts_imported_screen.dart';
-import 'package:poseapp/presentation/invite_friends_contacts_imported1_screen/invite_friends_contacts_imported1_screen.dart';
-import 'package:poseapp/presentation/notifications1_screen/notifications1_screen.dart';
-
 import 'package:get/get.dart';
-
 import '../presentation/home_global_feed_screen/home_global_feed_screen.dart';
-import '../presentation/leaderboard1_screen/globalleaderboard_screen.dart';
 
 class AppRoutes {
   static String individualDetailWCommentsScreen =
@@ -50,8 +46,8 @@ class AppRoutes {
 
   static String inviteCodeScreen = '/invite_code_screen';
 
-  static String forgotPasswordVerificationScreen =
-      '/forgot_password_verification_screen';
+  static String allowPermissionScreen =
+      '/allow_permission_screen';
 
   static String addYourFriendsScreen = '/add_your_friends_screen';
 
@@ -98,7 +94,7 @@ class AppRoutes {
 
   static String settingsScreen = '/settings_screen';
 
-  static String notificationsScreen = '/notifications_screen';
+  static String notificationsSettingScreen = '/notificationssetting_screen';
 
   static String accountDetailsScreen = '/account_details_screen';
 
@@ -115,8 +111,8 @@ class AppRoutes {
   static String inviteFriendsContactsImportedScreen =
       '/invite_friends_contacts_imported_screen';
 
-  static String inviteFriendsContactsImported1Screen =
-      '/invite_friends_contacts_imported1_screen';
+  static String inviteFriendsContactsImportedHistoryScreen =
+      '/invite_friends_contacts_imported_history_screen';
 
   static String notifications1Screen = '/notifications1_screen';
 
@@ -140,14 +136,6 @@ class AppRoutes {
       page: () => BadgeEarnedScreen(),
     ),
     GetPage(
-      name: homeNotPostedYetScreen,
-      page: () => HomeNotPostedYetScreen(),
-    ),
-    GetPage(
-      name: homeNothingToShowScreen,
-      page: () => HomeNothingToShowScreen(),
-    ),
-    GetPage(
       name: otpVerificationScreen,
       page: () => OtpVerificationScreen(),
     ),
@@ -156,8 +144,8 @@ class AppRoutes {
       page: () => InviteCodeScreen(),
     ),
     GetPage(
-      name: forgotPasswordVerificationScreen,
-      page: () => ForgotPasswordVerificationScreen(),
+      name: allowPermissionScreen,
+      page: () => AllowPermissionScreen(),
     ),
     GetPage(
       name: addYourFriendsScreen,
@@ -204,8 +192,8 @@ class AppRoutes {
       page: () => SettingsScreen(),
     ),
     GetPage(
-      name: notificationsScreen,
-      page: () => NotificationsScreen(),
+      name: notificationsSettingScreen,
+      page: () => NotificationsSettingScreen(),
     ),
     GetPage(
       name: accountDetailsScreen,
@@ -236,12 +224,12 @@ class AppRoutes {
       page: () => InviteFriendsContactsImportedScreen(),
     ),
     GetPage(
-      name: inviteFriendsContactsImported1Screen,
-      page: () => InviteFriendsContactsImported1Screen(),
+      name: inviteFriendsContactsImportedHistoryScreen,
+      page: () => InviteFriendsContactsImportedHistoryScreen(),
     ),
     GetPage(
       name: notifications1Screen,
-      page: () => Notifications1Screen(),
+      page: () => NotificationsScreen(),
     ),
     GetPage(
       name: initialRoute,

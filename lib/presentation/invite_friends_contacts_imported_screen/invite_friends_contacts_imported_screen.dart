@@ -261,6 +261,6 @@ class InviteFriendsContactsImportedScreen extends StatelessWidget {
   }
 
   onTapInviteHistory() {
-    Get.toNamed(AppRoutes.inviteFriendsContactsImported1Screen);
+    Get.toNamed(AppRoutes.inviteFriendsContactsImportedHistoryScreen);
   }
 }

@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:poseapp/core/app_export.dart';
 import 'package:poseapp/theme/googleFonts.dart';
 
-class ForgotPasswordVerificationScreen
+class AllowPermissionScreen
     extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

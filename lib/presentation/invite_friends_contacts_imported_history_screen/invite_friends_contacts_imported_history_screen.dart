@@ -4,7 +4,7 @@ import 'package:poseapp/core/app_export.dart';
 
 import '../../theme/googleFonts.dart';
 
-class InviteFriendsContactsImported1Screen
+class InviteFriendsContactsImportedHistoryScreen
     extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

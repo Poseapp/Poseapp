@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:poseapp/core/app_export.dart';
 import '../../theme/googleFonts.dart';
 
-class Notifications1Screen extends StatelessWidget {
+class NotificationsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

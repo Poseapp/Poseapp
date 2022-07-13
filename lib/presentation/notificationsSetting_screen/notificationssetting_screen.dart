@@ -4,7 +4,7 @@ import 'package:poseapp/core/app_export.dart';
 
 import '../../theme/googleFonts.dart';
 
-class NotificationsScreen extends StatelessWidget {
+class NotificationsSettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:poseapp/core/app_export.dart';
-
 import '../../theme/googleFonts.dart';
 
 class GlobalLeaderboardScreen extends StatefulWidget {

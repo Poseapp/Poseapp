@@ -48,6 +48,7 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                       children: [
                         GestureDetector(
                           onTap: () {
+                            
                           },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(
@@ -191,17 +192,22 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                         child: Stack(
                           fit: StackFit.expand,
                           children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(
-                                getHorizontalSize(
-                                  32.00,
+                            GestureDetector(
+                              onTap: () {
+                                  onTapIndividualCommentDetails();  
+                              },
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(
+                                  getHorizontalSize(
+                                    32.00,
+                                  ),
                                 ),
-                              ),
-                              child: ColorFiltered(
-                                colorFilter: ColorFilter.mode(Colors.transparent.withOpacity(0.3), BlendMode.hardLight),
-                                child: Image.asset(
-                                  'assets/images/salmanimage.png',
-                                  fit: BoxFit.fill,
+                                child: ColorFiltered(
+                                  colorFilter: ColorFilter.mode(Colors.transparent.withOpacity(0.3), BlendMode.hardLight),
+                                  child: Image.asset(
+                                    'assets/images/salmanimage.png',
+                                    fit: BoxFit.fill,
+                                  ),
                                 ),
                               ),
                             ),

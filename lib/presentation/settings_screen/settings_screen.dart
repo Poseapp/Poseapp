@@ -173,6 +173,6 @@ class SettingsScreen extends StatelessWidget {
   }
 
   onTapNotificationSettingScreen() {
-    Get.toNamed(AppRoutes.notificationsScreen);
+    Get.toNamed(AppRoutes.notificationsSettingScreen);
   }
 }
