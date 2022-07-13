@@ -355,8 +355,11 @@ class IndividualDetailWCommentsScreen extends StatelessWidget {
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'msg_add_a_comment'.tr,
-                          hintStyle: AppStyle.textstyleralewaymedium14.copyWith(
-                              fontSize: 16, fontWeight: FontWeight.w500),
+                          hintStyle: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(18),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray500,
+                              ),
                           suffixIcon: GestureDetector(
                               onTap: () {},
                               child: Padding(
@@ -364,13 +367,12 @@ class IndividualDetailWCommentsScreen extends StatelessWidget {
                                 child: Text(
                                   'Send',
                                   textAlign: TextAlign.center,
-                                  style: AppStyle.textstyleralewayromanbold15
-                                      .copyWith(
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: getFontSize(
-                                      20,
-                                    ),
-                                  ),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(20),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray500,
+                              letterSpacing: 1
+                              ),
                                 ),
                               )))),
                 )

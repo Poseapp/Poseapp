@@ -2,7 +2,6 @@ import 'package:poseapp/presentation/allow_permission_screen/allow_permission_sc
 import 'package:poseapp/presentation/globalleaderboard_screen/globalleaderboard_screen.dart';
 import 'package:poseapp/presentation/individual_detail_w_comments_screen/individual_detail_w_comments_screen.dart';
 import 'package:poseapp/presentation/home_friends_feed_screen/home_friends_feed_screen.dart';
-import 'package:poseapp/presentation/badge_earned_screen/badge_earned_screen.dart';
 import 'package:poseapp/presentation/invite_friends_contacts_imported_history_screen/invite_friends_contacts_imported_history_screen.dart';
 import 'package:poseapp/presentation/notificationsSetting_screen/notificationssetting_screen.dart';
 import 'package:poseapp/presentation/notifications_screen/notifications1_screen.dart';
@@ -36,8 +35,6 @@ class AppRoutes {
 
   static String homeFriendsFeedScreen = '/home_friends_feed_screen';
 
-  static String badgeEarnedScreen = '/badge_earned_screen';
-
   static String homeNotPostedYetScreen = '/home_not_posted_yet_screen';
 
   static String homeNothingToShowScreen = '/home_nothing_to_show_screen';
@@ -64,17 +61,11 @@ class AppRoutes {
 
   static String welcomeScreen = '/welcome_screen';
 
-  static String welcomeScreenLogoChangeScreen =
-      '/welcome_screen_logo_change_screen';
-
   static String letSGetStartedScreen = '/let_s_get_started_screen';
 
   static String accountSetupSuccessScreen = '/account_setup_success_screen';
 
   static String waitlistScreen = '/waitlist_screen';
-
-  static String accountSetupFinishingAccountErrorScreen =
-      '/account_setup_finishing_account_error_screen';
 
   static String accountSetupFinishingAccountScreen =
       '/account_setup_finishing_account_screen';
@@ -84,13 +75,6 @@ class AppRoutes {
   static String leaderboard1Screen = '/globalleaderboard_screen';
 
   static String profileScreen = '/profile_screen';
-
-  static String profileFriendsScreen = '/profile_friends_screen';
-
-  static String profileFriendsRequestsScreen =
-      '/profile_friends_requests_screen';
-
-  static String profileBadgesScreen = '/profile_badges_screen';
 
   static String settingsScreen = '/settings_screen';
 
@@ -130,10 +114,6 @@ class AppRoutes {
     GetPage(
       name: homeFriendsFeedScreen,
       page: () => HomeFriendsFeedScreen(),
-    ),
-    GetPage(
-      name: badgeEarnedScreen,
-      page: () => BadgeEarnedScreen(),
     ),
     GetPage(
       name: otpVerificationScreen,

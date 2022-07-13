@@ -100,8 +100,11 @@ class CameraPictureTakenScreen extends StatelessWidget {
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: 'msg_add_a_caption'.tr,
-                              hintStyle: AppStyle.textstyleralewayromanmedium15
-                                  .copyWith(fontSize: getFontSize(15)),
+                              hintStyle: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray500,
+                              )
                             )),
                       ),
                     ],

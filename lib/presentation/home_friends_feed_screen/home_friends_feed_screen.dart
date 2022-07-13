@@ -17,7 +17,7 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
       body: Container(
         width: size.width,
         height: size.height,
-                decoration: BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(
               0.5000000357481059,
@@ -47,9 +47,7 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                     child: Row(
                       children: [
                         GestureDetector(
-                          onTap: () {
-                            
-                          },
+                          onTap: () {},
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(
                               getHorizontalSize(
@@ -81,19 +79,19 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                               Text("msg_welcome_to_pose".tr,
                                   overflow: TextOverflow.ellipsis,
                                   style: AppStyle.textstyleralewaysemibold82
-                                      .copyWith(fontSize: getFontSize(12)
-                                      )
-                                      ),
+                                      .copyWith(fontSize: getFontSize(12))),
                               GestureDetector(
-                                onTap: () {
-                                },
-                                child: Text("lbl_evelyn".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
-                                    style: GoogleFontNewDelaGotistyles.textstyleDelaGotiNew38.copyWith(
-                                     fontSize: 14,fontWeight: FontWeight.w100
-                                    ),
-                                        ),
+                                onTap: () {},
+                                child: Text(
+                                  "lbl_evelyn".tr,
+                                  overflow: TextOverflow.ellipsis,
+                                  textAlign: TextAlign.left,
+                                  style: GoogleFontNewDelaGotistyles
+                                      .textstyleDelaGotiNew38
+                                      .copyWith(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w100),
+                                ),
                               ),
                             ],
                           ),
@@ -143,19 +141,20 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                         Text("msg_friend_pose_fee".tr,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
-                            style: GoogleFontNewDelaGotistyles.textstyleDelaGotiNew38.copyWith(
-                              fontSize: 20,
-                              color: ColorConstant.deepOrange300,
-                              fontWeight: FontWeight.w100
-                            )
-                                ),
+                            style: GoogleFontNewDelaGotistyles
+                                .textstyleDelaGotiNew38
+                                .copyWith(
+                                    fontSize: 20,
+                                    color: ColorConstant.deepOrange300,
+                                    fontWeight: FontWeight.w100)),
                         GestureDetector(
                             onTap: () {
                               onTapGlobalFeedScreen();
                             },
                             child: Padding(
                               padding: const EdgeInsets.only(top: 6),
-                              child: SvgPicture.asset(ImageConstant.friendsPoseLogo,
+                              child: SvgPicture.asset(
+                                ImageConstant.friendsPoseLogo,
                               ),
                             )),
                       ],
@@ -180,21 +179,21 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                         width: size.width,
                         alignment: Alignment.center,
                         margin: EdgeInsets.only(
-                            top: getVerticalSize(
-                              10.50,
-                            ),
-                            bottom: getVerticalSize(
-                              2.50,
-                            ),
-                            left: 12,
-                            right: 12,
-                            ),
+                          top: getVerticalSize(
+                            10.50,
+                          ),
+                          bottom: getVerticalSize(
+                            2.50,
+                          ),
+                          left: 12,
+                          right: 12,
+                        ),
                         child: Stack(
                           fit: StackFit.expand,
                           children: [
                             GestureDetector(
                               onTap: () {
-                                  onTapIndividualCommentDetails();  
+                                onTapIndividualCommentDetails();
                               },
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(
@@ -203,7 +202,9 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                                   ),
                                 ),
                                 child: ColorFiltered(
-                                  colorFilter: ColorFilter.mode(Colors.transparent.withOpacity(0.3), BlendMode.hardLight),
+                                  colorFilter: ColorFilter.mode(
+                                      Colors.transparent.withOpacity(0.3),
+                                      BlendMode.hardLight),
                                   child: Image.asset(
                                     'assets/images/salmanimage.png',
                                     fit: BoxFit.fill,
@@ -301,16 +302,18 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                                                   ),
                                                 ),
                                               ),
-                                              Text(
-                                                "lbl_elynnn123".tr,
-                                                overflow:
-                                                    TextOverflow.ellipsis,
-                                                textAlign: TextAlign.left,
-                                                style: GoogleFontNewDelaGotistyles.textstyleDelaGotiNew38.copyWith(
-                                                  fontSize: 14,color: ColorConstant.bluegray902,
-                                                  fontWeight: FontWeight.w100
-                                                )
-                                              ),
+                                              Text("lbl_elynnn123".tr,
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
+                                                  textAlign: TextAlign.left,
+                                                  style: GoogleFontNewDelaGotistyles
+                                                      .textstyleDelaGotiNew38
+                                                      .copyWith(
+                                                          fontSize: 14,
+                                                          color: ColorConstant
+                                                              .bluegray902,
+                                                          fontWeight:
+                                                              FontWeight.w100)),
                                             ],
                                           ),
                                         ),
@@ -320,8 +323,11 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                                                 MainAxisAlignment.end,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsets.only(right: 10),
-                                                child: Image.asset(ImageConstant.likeButton,),
+                                                padding: const EdgeInsets.only(
+                                                    right: 10),
+                                                child: Image.asset(
+                                                  ImageConstant.likeButton,
+                                                ),
                                               ),
                                             ],
                                           ),
@@ -330,36 +336,44 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(left:15, right: 15),
+                                    padding: const EdgeInsets.only(
+                                        left: 15, right: 15),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text("msg_caption_goes_he".tr,
                                             overflow: TextOverflow.ellipsis,
                                             textAlign: TextAlign.left,
-                                            style: GoogleFontNewDelaGotistyles.textstyleDelaGotiNew38.copyWith(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w100
-                                            )
-                                                    ),
-                                                    SizedBox(
-                                                      height: 5,
-                                                    ),
+                                            style: GoogleFontNewDelaGotistyles
+                                                .textstyleDelaGotiNew38
+                                                .copyWith(
+                                                    fontSize: 16,
+                                                    fontWeight:
+                                                        FontWeight.w100)),
+                                        SizedBox(
+                                          height: 5,
+                                        ),
                                         GestureDetector(
                                           onTap: () {
                                             onTapIndividualCommentDetails();
                                           },
                                           child: Container(
                                             margin: EdgeInsets.only(
-                                                top: 10,),
-                                            child: Text("msg_view_all_5_comm".tr,
-                                                overflow: TextOverflow.ellipsis,
-                                                textAlign: TextAlign.left,
-                                                style: AppStyle
-                                                    .textstyleralewaysemibold101
-                                                    .copyWith(
-                                                        fontSize:
-                                                            getFontSize(16))),
+                                              top: 10,
+                                            ),
+                                            child: Text(
+                                              "msg_view_all_5_comm".tr,
+                                              overflow: TextOverflow.ellipsis,
+                                              textAlign: TextAlign.left,
+                                              style: GoogleFontNewDelaGotistyles
+                                                  .textstyleRalweyMedium14
+                                                  .copyWith(
+                                                fontSize: getFontSize(16),
+                                                fontWeight: FontWeight.w700,
+                                                color: ColorConstant.gray500,
+                                              ),
+                                            ),
                                           ),
                                         )
                                       ],
@@ -391,10 +405,12 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
   onTapGlobalFeedScreen() {
     Get.toNamed(AppRoutes.homeGlobalFeedScreen);
   }
- onTapInviteFriendsScreen() {
+
+  onTapInviteFriendsScreen() {
     Get.toNamed(AppRoutes.inviteFriendsScreen);
   }
-   onTapNotificationScreen() {
+
+  onTapNotificationScreen() {
     Get.toNamed(AppRoutes.notifications1Screen);
   }
 }

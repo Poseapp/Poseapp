@@ -57,10 +57,13 @@ class AddYourFriendsScreen extends StatelessWidget {
                               ),
                               child: Text("msg_import_your_con".tr,
                                   textAlign: TextAlign.left,
-                                  style: AppStyle.textstyleralewaymedium14
-                                      .copyWith(
-                                          fontSize: getFontSize(14),
-                                          height: 1.36)),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                          ),
                             ),
                             GestureDetector(
                               onTap: () {

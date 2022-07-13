@@ -60,11 +60,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                                 Text("msg_once_a_day_we".tr,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
-                            style: AppStyle
-                                .textstyleralewaymedium10
-                                .copyWith(
-                                    fontSize: getFontSize(10),
-                                    letterSpacing: 2.80)
+                            style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.deepOrange50,
+                             letterSpacing: 2.80
+                              ),
                                     )
                               ],
                             )

@@ -39,10 +39,13 @@ class AllowPermissionScreen
                             ),
                             child: Text("msg_to_give_you_the".tr,
                                 textAlign: TextAlign.left,
-                                style: AppStyle.textstyleralewaymedium14
-                                    .copyWith(
-                                        fontSize: getFontSize(14),
-                                        height: 1.36)),
+                                style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                        ),
                           ),
                           Align(
                               alignment: Alignment.center,
@@ -61,11 +64,14 @@ class AllowPermissionScreen
                               child: Text("msg_allow_us_to_use".tr,
                                   maxLines: null,
                                   textAlign: TextAlign.center,
-                                  style: AppStyle
-                                      .textstyleralewayromanregular14
-                                      .copyWith(
-                                          fontSize: getFontSize(14),
-                                          height: 1.36))),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                          )
+                                          ),
                           Align(
                             alignment: Alignment.center,
                             child: Container(
@@ -84,11 +90,14 @@ class AllowPermissionScreen
                               child: Text("msg_allow_us_to_sen".tr,
                                   maxLines: null,
                                   textAlign: TextAlign.center,
-                                  style: AppStyle
-                                      .textstyleralewayromanregular14
-                                      .copyWith(
-                                          fontSize: getFontSize(14),
-                                          height: 1.36))),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                          )
+                                          ),
                         ],
                       ),
                     ),

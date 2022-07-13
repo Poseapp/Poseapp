@@ -106,9 +106,10 @@ class InviteFriendsScreen extends StatelessWidget {
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: 'msg_invite_via_phon'.tr,
-                              hintStyle: AppStyle.textstyleralewayromanbold15.copyWith(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600
+                              hintStyle: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(18),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray500,
                               ),
                             ),
                           ),

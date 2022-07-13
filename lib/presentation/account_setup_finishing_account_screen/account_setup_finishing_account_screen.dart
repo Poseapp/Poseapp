@@ -58,13 +58,14 @@ class AccountSetupFinishingAccountScreen extends StatelessWidget {
                                 top: getVerticalSize(25.00),
                               ),
                               child: Text("msg_finish_your_acc2".tr,
-                                  // overflow: TextOverflow.ellipsis,
                                   textAlign: TextAlign.left,
-                                  style: AppStyle.textstyleralewaymedium14
-                                      .copyWith(
-                                          fontSize: getFontSize(14),
-                                          height: 1.36,
-                                          fontWeight: FontWeight.w700)),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                          ),
                             ),
                             Align(
                               alignment: Alignment.center,

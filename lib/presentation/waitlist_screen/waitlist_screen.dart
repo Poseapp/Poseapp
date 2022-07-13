@@ -53,11 +53,14 @@ class WaitlistScreen extends StatelessWidget {
                               child: Text("msg_due_to_an_incre".tr,
                                   maxLines: null,
                                   textAlign: TextAlign.left,
-                                  style: AppStyle.textstyleralewayromanregular14
-                                      .copyWith(
-                                        fontWeight: FontWeight.w500,
-                                          fontSize: getFontSize(15),
-                                          height: 1.36))),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                          )
+                                          ),
                           Container(
                             margin: EdgeInsets.only(
                                 top: getVerticalSize(21.00), right: 20),
@@ -79,10 +82,14 @@ class WaitlistScreen extends StatelessWidget {
                               child: Text("msg_find_somebody_w".tr,
                                   maxLines: null,
                                   textAlign: TextAlign.left,
-                                  style: AppStyle.textstyleralewayromanregular14
-                                      .copyWith(
-                                          fontSize: getFontSize(14),
-                                          height: 1.36))),
+                                  style: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(14),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray501,
+                              height: 1.36
+                              ),
+                                          )
+                                          ),
 
                           Container(
                               margin: EdgeInsets.only(top: 30.0),

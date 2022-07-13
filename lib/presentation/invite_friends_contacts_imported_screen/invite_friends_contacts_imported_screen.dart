@@ -88,7 +88,8 @@ class InviteFriendsContactsImportedScreen extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: AppStyle.textstyleralewaysemibold153.copyWith(
                             fontWeight: FontWeight.w600,
-                            fontSize: getFontSize(16))),
+                            fontSize: getFontSize(16))
+                            ),
                     SizedBox(
                       height: 20,
                     ),
@@ -114,10 +115,11 @@ class InviteFriendsContactsImportedScreen extends StatelessWidget {
                               decoration: InputDecoration(
                                 border: InputBorder.none,
                                 hintText: 'msg_invite_via_phon'.tr,
-                                hintStyle: AppStyle.textstyleralewayromanbold15
-                                    .copyWith(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w600),
+                                hintStyle: GoogleFontNewDelaGotistyles.textstyleRalweyMedium14.copyWith(
+                                fontSize: getFontSize(18),
+                                fontWeight: FontWeight.w700,
+                              color: ColorConstant.gray500,
+                              ),
                               ),
                             ),
                           ),

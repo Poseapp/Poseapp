@@ -351,11 +351,14 @@ class _HomeGlobalFeedScreen extends State<HomeGlobalFeedScreen> {
                                             child: Text("msg_view_all_5_comm".tr,
                                                 overflow: TextOverflow.ellipsis,
                                                 textAlign: TextAlign.left,
-                                                style: AppStyle
-                                                    .textstyleralewaysemibold101
-                                                    .copyWith(
-                                                        fontSize:
-                                                            getFontSize(16))),
+                                                style: GoogleFontNewDelaGotistyles
+                                                  .textstyleRalweyMedium14
+                                                  .copyWith(
+                                                fontSize: getFontSize(16),
+                                                fontWeight: FontWeight.w700,
+                                                color: ColorConstant.gray500,
+                                              ),
+                                                            ),
                                           ),
                                         )
                                       ],
