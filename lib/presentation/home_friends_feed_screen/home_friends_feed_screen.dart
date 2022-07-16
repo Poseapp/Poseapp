@@ -4,11 +4,18 @@ import 'package:poseapp/core/app_export.dart';
 import 'package:poseapp/theme/googleFonts.dart';
 
 class HomeFriendsFeedScreen extends StatefulWidget {
+  final ValueChanged<int>? onAssignDone;
+
+  const HomeFriendsFeedScreen({Key? key, this.onAssignDone}) : super(key: key);
   @override
   State<HomeFriendsFeedScreen> createState() => _HomeFriendsFeedScreenState();
 }
 
 class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
+  void _onAssignDone(int index) {
+    print('ridertt6');
+    widget.onAssignDone!(4);
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -81,7 +88,9 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                                   style: AppStyle.textstyleralewaysemibold82
                                       .copyWith(fontSize: getFontSize(12))),
                               GestureDetector(
-                                onTap: () {},
+                                onTap: () {
+                                  _onAssignDone(4);
+                                },
                                 child: Text(
                                   "lbl_evelyn".tr,
                                   overflow: TextOverflow.ellipsis,

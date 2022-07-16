@@ -1,7 +1,7 @@
 import 'package:poseapp/presentation/allow_permission_screen/allow_permission_screen.dart';
 import 'package:poseapp/presentation/globalleaderboard_screen/globalleaderboard_screen.dart';
-import 'package:poseapp/presentation/individual_detail_w_comments_screen/individual_detail_w_comments_screen.dart';
 import 'package:poseapp/presentation/home_friends_feed_screen/home_friends_feed_screen.dart';
+import 'package:poseapp/presentation/individual_detail_w_comments_screen/individual_detail_w_comments_screen.dart';
 import 'package:poseapp/presentation/invite_friends_contacts_imported_history_screen/invite_friends_contacts_imported_history_screen.dart';
 import 'package:poseapp/presentation/notificationsSetting_screen/notificationssetting_screen.dart';
 import 'package:poseapp/presentation/notifications_screen/notifications1_screen.dart';
@@ -25,6 +25,7 @@ import 'package:poseapp/presentation/camera_picture_taken_screen/camera_picture_
 import 'package:poseapp/presentation/invite_friends_screen/invite_friends_screen.dart';
 import 'package:poseapp/presentation/invite_friends_contacts_imported_screen/invite_friends_contacts_imported_screen.dart';
 import 'package:get/get.dart';
+
 import '../presentation/home_global_feed_screen/home_global_feed_screen.dart';
 
 class AppRoutes {

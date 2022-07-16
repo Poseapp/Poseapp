@@ -14,13 +14,27 @@ class CustomNavigationBar extends StatefulWidget {
 
 class _CustomNavigationBarState extends State<CustomNavigationBar> {
  int _selectedIndex = 0;
-
-  final pages = [
-    HomeFriendsFeedScreen(),
-    TodaySPoseScreen(),
-    LeaderboardScreen(),
-    ProfileScreen(),
-  ];
+   void _onAssignDone(int index) {
+    _selectedIndex = 3; 
+    setState(() {
+      print(_selectedIndex);
+    });
+  }
+   
+Widget getStatusColor(int i) {
+      switch (i) {
+        case 0:
+          return HomeFriendsFeedScreen(onAssignDone: _onAssignDone);
+        case 1:
+          return TodaySPoseScreen();
+        case 2:
+          return  LeaderboardScreen();
+        case 3:
+          return ProfileScreen();
+        default:   
+          return HomeFriendsFeedScreen(onAssignDone: _onAssignDone);
+      }
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +75,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             ),
           ),
         ),
-        body: pages[_selectedIndex],
+        body: getStatusColor(_selectedIndex),
       ),
     );
   }

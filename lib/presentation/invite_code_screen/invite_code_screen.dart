@@ -35,7 +35,7 @@ class InviteCodeScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Expanded(
-                      flex: 7,
+                     flex: 3,
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,7 +70,7 @@ class InviteCodeScreen extends StatelessWidget {
                             ),
                             Container(
                                 margin: EdgeInsets.only(
-                                  top: getVerticalSize(55.00),
+                                  top: getVerticalSize(30.00),
                                 ),
                                 width: double.infinity,
                                 child: PinInputTextField(
