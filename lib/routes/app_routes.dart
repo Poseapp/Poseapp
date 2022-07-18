@@ -12,7 +12,6 @@ import 'package:poseapp/presentation/add_your_friends_contacts_linked_screen/add
 import 'package:poseapp/presentation/welcome_screen/welcome_screen.dart';
 import 'package:poseapp/presentation/let_s_get_started_screen/let_s_get_started_screen.dart';
 import 'package:poseapp/presentation/account_setup_success_screen/account_setup_success_screen.dart';
-import 'package:poseapp/presentation/waitlist_screen/waitlist_screen.dart';
 import 'package:poseapp/presentation/account_setup_finishing_account_screen/account_setup_finishing_account_screen.dart';
 import 'package:poseapp/presentation/leaderboard_screen/leaderboard_screen.dart';
 import 'package:poseapp/presentation/profile_screen/profile_screen.dart';
@@ -25,8 +24,8 @@ import 'package:poseapp/presentation/camera_picture_taken_screen/camera_picture_
 import 'package:poseapp/presentation/invite_friends_screen/invite_friends_screen.dart';
 import 'package:poseapp/presentation/invite_friends_contacts_imported_screen/invite_friends_contacts_imported_screen.dart';
 import 'package:get/get.dart';
-
 import '../presentation/home_global_feed_screen/home_global_feed_screen.dart';
+import '../presentation/waitlist_screen/waitlist_screen.dart';
 
 class AppRoutes {
   static String individualDetailWCommentsScreen =
