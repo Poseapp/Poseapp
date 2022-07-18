@@ -95,7 +95,7 @@ class AccountSetupSuccessScreen
                       children: [
                         GestureDetector(
                             onTap: () {
-                              onTapBtnStrikeapose2();
+                              Get.toNamed(AppRoutes.allowPermissionScreen);
                             },
                             child: Container(
                                 alignment: Alignment.center,
@@ -116,9 +116,5 @@ class AccountSetupSuccessScreen
                 ),
               ),
             )));
-  }
-
-  onTapBtnStrikeapose2() {
-    Get.toNamed(AppRoutes.waitlistScreen);
   }
 }

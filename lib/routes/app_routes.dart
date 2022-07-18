@@ -6,13 +6,11 @@ import 'package:poseapp/presentation/invite_friends_contacts_imported_history_sc
 import 'package:poseapp/presentation/notificationsSetting_screen/notificationssetting_screen.dart';
 import 'package:poseapp/presentation/notifications_screen/notifications1_screen.dart';
 import 'package:poseapp/presentation/otp_verification_screen/otp_verification_screen.dart';
-import 'package:poseapp/presentation/invite_code_screen/invite_code_screen.dart';
 import 'package:poseapp/presentation/add_your_friends_screen/add_your_friends_screen.dart';
 import 'package:poseapp/presentation/add_your_friends_contacts_linked_screen/add_your_friends_contacts_linked_screen.dart';
 import 'package:poseapp/presentation/welcome_screen/welcome_screen.dart';
 import 'package:poseapp/presentation/let_s_get_started_screen/let_s_get_started_screen.dart';
 import 'package:poseapp/presentation/account_setup_success_screen/account_setup_success_screen.dart';
-import 'package:poseapp/presentation/waitlist_screen/waitlist_screen.dart';
 import 'package:poseapp/presentation/account_setup_finishing_account_screen/account_setup_finishing_account_screen.dart';
 import 'package:poseapp/presentation/leaderboard_screen/leaderboard_screen.dart';
 import 'package:poseapp/presentation/profile_screen/profile_screen.dart';
@@ -42,8 +40,6 @@ class AppRoutes {
 
   static String otpVerificationScreen = '/otp_verification_screen';
 
-  static String inviteCodeScreen = '/invite_code_screen';
-
   static String allowPermissionScreen =
       '/allow_permission_screen';
 
@@ -65,8 +61,6 @@ class AppRoutes {
   static String letSGetStartedScreen = '/let_s_get_started_screen';
 
   static String accountSetupSuccessScreen = '/account_setup_success_screen';
-
-  static String waitlistScreen = '/waitlist_screen';
 
   static String accountSetupFinishingAccountScreen =
       '/account_setup_finishing_account_screen';
@@ -121,10 +115,6 @@ class AppRoutes {
       page: () => OtpVerificationScreen(),
     ),
     GetPage(
-      name: inviteCodeScreen,
-      page: () => InviteCodeScreen(),
-    ),
-    GetPage(
       name: allowPermissionScreen,
       page: () => AllowPermissionScreen(),
     ),
@@ -147,10 +137,6 @@ class AppRoutes {
     GetPage(
       name: accountSetupSuccessScreen,
       page: () => AccountSetupSuccessScreen(),
-    ),
-    GetPage(
-      name: waitlistScreen,
-      page: () => WaitlistScreen(),
     ),
     GetPage(
       name: accountSetupFinishingAccountScreen,

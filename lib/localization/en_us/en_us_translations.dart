@@ -128,7 +128,7 @@ final Map<String, String> enUs = {
   "msg_posed_21_days_i": "Posed 21 Days in a Row",
   "msg_follow_the_pro": "Follow the \nprompt and\nStrike a Pose!",
   "msg_have_friends_on":
-      "Have friends on the waitlist on Pose?\nGive them instant access using an Invite.\n\nYou can either import your contacts, or\ndirectly message them with an invite!",
+      "Have friends you want to see on Pose?\nGive them instant access using an Invite.\n\nYou can either import your contacts, or\ndirectly message them with an invite!",
   "msg_forgot_password": "Forgot Password - verification",
   "lbl_account_details": "Account Details",
   "lbl_send_your_pose": "Send Your Pose!",

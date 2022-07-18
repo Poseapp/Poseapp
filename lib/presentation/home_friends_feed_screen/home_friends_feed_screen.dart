@@ -54,7 +54,7 @@ class _HomeFriendsFeedScreenState extends State<HomeFriendsFeedScreen> {
                     child: Row(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () => _onAssignDone(4),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(
                               getHorizontalSize(
