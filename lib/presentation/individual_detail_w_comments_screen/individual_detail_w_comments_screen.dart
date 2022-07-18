@@ -124,10 +124,10 @@ class IndividualDetailWCommentsScreen extends StatelessWidget {
                                       child: Image.asset(
                                         ImageConstant.profileImageLogo,
                                         height: getSize(
-                                          50.00,
+                                          40.00,
                                         ),
                                         width: getSize(
-                                          50.00,
+                                          40.00,
                                         ),
                                         fit: BoxFit.fill,
                                       ),
@@ -225,7 +225,6 @@ class IndividualDetailWCommentsScreen extends StatelessWidget {
                   height: 10,
                 ),
                 Expanded(
-                  flex: 1,
                   child: ListView.builder(
                       itemCount: 10,
                       itemBuilder: (context, index) {
@@ -265,10 +264,10 @@ class IndividualDetailWCommentsScreen extends StatelessWidget {
                                   child: Image.asset(
                                     ImageConstant.profileImageLogo,
                                     height: getSize(
-                                      50.00,
+                                      40.00,
                                     ),
                                     width: getSize(
-                                      50.00,
+                                      40.00,
                                     ),
                                     fit: BoxFit.fill,
                                   ),
